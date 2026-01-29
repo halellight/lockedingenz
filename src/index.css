@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nigerian-green: #008751;
+  --color-nigerian-white: #ffffff;
+  --color-genz-purple: #8b5cf6;
+  --color-genz-neon: #a8ff00;
+
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-gray: #9ca3af;
+  /* gray-400 */
+}
+
+:root.light {
+  --background: #ffffff;
+  --foreground: #050505;
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --text-gray: #4b5563;
+  /* gray-600 */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Custom Utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #008751, #a8ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
