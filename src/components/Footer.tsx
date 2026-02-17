@@ -1,5 +1,6 @@
 import { Vote } from 'lucide-react';
 import { FaTiktok, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -30,9 +31,10 @@ export const Footer = () => {
                     <div>
                         <h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-[var(--text-gray)]">Quick Links</h4>
                         <ul className="space-y-4 text-sm font-medium">
-                            <li><a href="#election-info" className="hover:text-nigerian-green transition-colors">Election Info</a></li>
-                            <li><a href="#polling-units" className="hover:text-nigerian-green transition-colors">Polling Units</a></li>
-                            <li><a href="#why-vote?" className="hover:text-nigerian-green transition-colors">Why Vote?</a></li>
+                            <li><a href="/#election-info" className="hover:text-nigerian-green transition-colors">Election Info</a></li>
+                            <li><a href="/#polling-units" className="hover:text-nigerian-green transition-colors">Polling Units</a></li>
+                            <li><a href="/#why-vote" className="hover:text-nigerian-green transition-colors">Why Vote?</a></li>
+                            <li><Link to="/candidates" className="hover:text-nigerian-green transition-colors">Meet the Candidates</Link></li>
                         </ul>
                     </div>
                     <div>
